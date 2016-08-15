@@ -12,9 +12,7 @@ RUN mkdir /c9/workspace
 VOLUME /c9/workspace
 
 ENV C9_WORKSPACE /cloud9/workspace
-ENV PORT 8888
-ENV IP 0.0.0.0
 
 EXPOSE 8888
 
-CMD ["node", "/c9/server.js"]
+CMD ["node", "/c9/server.js", "-l", "0.0.0.0", "-p", "8888", "-a", ":"]
