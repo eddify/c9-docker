@@ -13,6 +13,7 @@ VOLUME /c9/workspace
 
 ENV C9_WORKSPACE /cloud9/workspace
 ENV PORT 8888
+ENV IP 0.0.0.0
 
 EXPOSE 8888
 
